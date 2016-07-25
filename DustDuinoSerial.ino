@@ -90,7 +90,7 @@ void loop(){
       // first, PM10 count to mass concentration conversion
       double r10 = 2.6*pow(10,-6);
       double pi = 3.14159;
-      double vol10 = (4/3)*pi*pow(r10,3);
+      double vol10 = (4.0/3.0)*pi*pow(r10,3);
       double density = 1.65*pow(10,12);
       double mass10 = density*vol10;
       double K = 3531.5;
@@ -98,7 +98,7 @@ void loop(){
       
       // next, PM2.5 count to mass concentration conversion
       double r25 = 0.44*pow(10,-6);
-      double vol25 = (4/3)*pi*pow(r25,3);
+      double vol25 = (4.0/3.0)*pi*pow(r25,3);
       double mass25 = density*vol25;
       float concSmall = (PM25count)*K*mass25;
       
